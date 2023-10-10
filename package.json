@@ -1,9 +1,35 @@
 {
   "name": "@chibi929/vuejs-simple-stick",
   "version": "0.0.1",
-  "description": "Simple JoyStick for VueJS",
+  "description": "A simple joystick component for Vue.js",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:chibi929/vuejs-simple-stick.git",
+  "keywords": [
+    "vue"
+  ],
   "author": "chibi929",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "webpack --mode production",
+    "clean": "rm -rf ./dist",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.28.11",
+    "vue": "^2.7.14",
+    "vue-loader": "^10.3.0",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5",
+    "webpack-merge": "^2.6.1"
+  },
+  "files": [
+    "dist/"
+  ]
 }
