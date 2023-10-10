@@ -1,0 +1,9 @@
+{
+  "name": "@chibi929/vuejs-simple-stick",
+  "version": "0.0.1",
+  "description": "Simple JoyStick for VueJS",
+  "main": "dist/index.js",
+  "repository": "git@github.com:chibi929/vuejs-simple-stick.git",
+  "author": "chibi929",
+  "license": "MIT"
+}
