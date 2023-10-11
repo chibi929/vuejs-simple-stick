@@ -1,5 +1,5 @@
 <template>
-  <div id="joystick" class="simple-stick"></div>
+  <div id="joystick" class="simple-stick" :style="styles"></div>
 </template>
 
 <script>
@@ -27,6 +27,12 @@ export default {
     }
   },
   computed: {
+    styles() {
+      return {
+        '--stick-width': `${this.width}px`,
+        '--stick-height': `${this.height}px`,
+      }
+    },
     joyParams() {
       return {
         title: this.title,
@@ -81,3 +87,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.simple-stick {
+  position: relative;
+  width: var(--stick-width, '200px');
+  height: var(--stick-height, '200px');
+}
+.simple-stick #joystick {
+  position: absolute;
+  top: 0;
+  height: 0;
+}
+</style>

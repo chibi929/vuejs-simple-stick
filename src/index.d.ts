@@ -1,5 +1,5 @@
 declare module '@chibi929/vuejs-simple-stick' {
-  import Vue from 'vue'
-  const _default: Vue
+  import { Component } from 'vue'
+  const _default: Component
   export default _default
 }
