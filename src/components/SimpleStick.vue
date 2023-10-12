@@ -1,5 +1,5 @@
 <template>
-  <div id="joystick" class="simple-stick" :style="styles"></div>
+  <div :id="title" class="simple-stick" :style="styles"></div>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ import JoyStick from '../joystick'
 export default {
   name: 'SimpleStick',
   props: {
-    title: { type: String, default: undefined },
+    title: { type: String, default: 'joystick' },
     width: { type: Number, default: 200 },
     height: { type: Number, default: 200 },
     internalFillColor: { type: String, default: undefined },
@@ -48,7 +48,7 @@ export default {
     },
   },
   mounted() {
-    this.joy = new JoyStick('joystick', this.joyParams, (stickStatus) => {
+    this.joy = new JoyStick(this.title, this.joyParams, (stickStatus) => {
       const { cardinalDirection } = stickStatus
       if (this.direction === cardinalDirection) {
         return
