@@ -36,6 +36,9 @@ module.exports = {
         warnings: false,
       },
     }),
-    new CopyPlugin([{ from: './src/index.d.ts', to: '' }]),
+    new CopyPlugin([
+      { from: './src/index.d.ts', to: '' },
+      { from: './src/types', to: 'types' },
+    ]),
   ],
 }
