@@ -1,5 +1,7 @@
 # vuejs-simple-stick
 
+[![npm (scoped)](https://img.shields.io/npm/v/%40chibi929/vuejs-simple-stick)](https://www.npmjs.com/package/@chibi929/vuejs-simple-stick)
+
 This is a Vue.js(v2.x+) component.  
 [JoyStick](https://github.com/bobboteck/JoyStick) wrapped for Vue.js(v2.x+). Thank you!
 
