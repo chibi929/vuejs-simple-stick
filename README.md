@@ -19,7 +19,7 @@ export default {
 }
 ```
 
-Or globally using `Vue.compoennt`
+Or globally using `Vue.component`
 
 ```ts
 import Vue from 'vue'
@@ -32,7 +32,7 @@ Vue.component('SimpleStick', SimpleStick)
 
 ```html
 <template>
-  <VuejsSimpleStick @input="onInput" />
+  <SimpleStick @input="onInput" />
 </template>
 
 <script>
